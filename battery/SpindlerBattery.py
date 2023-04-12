@@ -6,4 +6,4 @@ class SpindlerBattery(Battery):
         self.__CurrentDate = CurrentDate
     
     def NeedsService(self):
-        return (self.__CurrentDate - self.__LastServiceDate) >= 2
+        return (self.__CurrentDate - self.__LastServiceDate) > 3

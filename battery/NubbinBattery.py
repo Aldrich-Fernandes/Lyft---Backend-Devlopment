@@ -6,4 +6,4 @@ class NubbinBattery(Battery):
         self.__CurrentDate = CurrentDate
     
     def NeedsService(self):
-        return (self.__CurrentDate - self.__LastServiceDate) >= 4
+        return (self.__CurrentDate - self.__LastServiceDate) > 4

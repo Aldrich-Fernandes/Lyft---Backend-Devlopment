@@ -1,9 +1,8 @@
 import unittest
-from datetime import datetime
 
-from engine import CapuletEngine # every 30,000 miles
-from engine import SternmanEngine # when the warning indicator is on
-from engine import WilloughbyEngine # every 60,000 miles
+from engine.CapuletEngine import CapuletEngine # every 30,000 miles
+from engine.SternmanEngine import SternmanEngine # when the warning indicator is on
+from engine.WilloughbyEngine import WilloughbyEngine # every 60,000 miles
 
 class TestCapuletEngine(unittest.TestCase): 
     def ShouldBeServiced(self):

@@ -1,8 +1,8 @@
 import unittest
 from datetime import datetime
 
-from battery import NubbinBattery
-from battery import SpindlerBattery
+from battery.NubbinBattery import NubbinBattery
+from battery.SpindlerBattery import SpindlerBattery
 
 class TestNubbinBattery(unittest.TestCase): # replaced very 4 years
     def ShouldBeServiced(self):
@@ -17,7 +17,7 @@ class TestNubbinBattery(unittest.TestCase): # replaced very 4 years
         battery = NubbinBattery(LastServiceDate, Today)
         self.assertFalse(battery.NeedsService())
 
-class TestSpindlerBattery(unittest.TestCase): # replaced very 2 years
+class TestSpindlerBattery(unittest.TestCase): # replaced very 3 years
     def ShouldBeServiced(self):
         Today = datetime.today().date()
         LastServiceDate = Today.replace(year=Today.year-4)
